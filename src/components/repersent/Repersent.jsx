@@ -4,7 +4,7 @@ import "../../assets/style/custom.scss";
 
 const Repersent = () => {
   return (
-    <div className="represent-section">
+    <div className="represent-section" id="represents">
       <div className="row">
         <div className="col-12">
           <div className="title">

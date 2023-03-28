@@ -7,7 +7,7 @@ import CustomSwiper from "../swiper";
 const ForiegnBrands = () => {
 
   return (
-    <div className="whole-foriegn-brands container">
+    <div className="whole-foriegn-brands container" id="brands">
       <div className="row">
         <div className="col-12">
           <div className="title">

@@ -20,7 +20,7 @@ const Management = () => {
     },
   ];
   return (
-    <section className="manegment-section">
+    <section className="manegment-section" id="managment">
       <div className="management-section container">
         <div className="row">
           <div className="col-12">

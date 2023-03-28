@@ -27,7 +27,7 @@ const Perssonel = () => {
     },
   ];
   return (
-    <section className="perssenel-section container">
+    <section className="perssenel-section container" id="techneation">
       <div className="row">
         <div className="col-12">
           <div className="title">

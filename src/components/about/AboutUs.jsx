@@ -32,7 +32,7 @@ const AboutUs = () => {
   ];
 
   return (
-    <section className="about-us-section container">
+    <section className="about-us-section container" id="about-us">
       <div className="row">
         <div className="col-12">
           <div className="abot-us-title">
