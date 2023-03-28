@@ -39,19 +39,10 @@ const CustomSwiper = () => {
   ];
   return (
     <Swiper
-      // width={190}
       spaceBetween={20}
       modules={[Pagination]}
       className="mySwiper"
       slidesPerView={"auto"}
-      // breakpoints={{
-      //   700 : {
-      //     slidesPerView : 3
-      //   },
-      //   1024 : {
-      //     slidesPerView : 6
-      //   }
-      // }}
     >
       {elements.map((element, key) => (
         <SwiperSlide key={key} clickable={true}>

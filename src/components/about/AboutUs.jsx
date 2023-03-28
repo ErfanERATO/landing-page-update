@@ -31,6 +31,7 @@ const AboutUs = () => {
     },
   ];
 
+
   return (
     <section className="about-us-section container" id="about-us">
       <div className="row">
