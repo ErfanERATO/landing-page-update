@@ -1,0 +1,25 @@
+.whole-foriegn-brands {
+  align-items: center;
+  margin-top: 174px;
+  .title {
+    text-align: center;
+    padding-bottom: 80px;
+    h2 {
+      font-size: 1.5rem;
+      color: #100942;
+      line-height: 41px;
+    }
+  }
+
+  .swiper-title {
+    display: flex;
+    direction: rtl;
+    padding-bottom: 5px;
+    // padding-right: 15px;
+    h3 {
+      color: #100942;
+      line-height: 31px;
+      font-size: 1.125rem;
+    }
+  }
+}

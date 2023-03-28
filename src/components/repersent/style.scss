@@ -1,0 +1,68 @@
+.represent-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 239px;
+  .title {
+    display: flex;
+    h2 {
+      color: #100942;
+      font-size: 1.5rem;
+      line-height: 41px;
+      text-align: center;
+    }
+  }
+
+  .all-represents {
+    position: relative;
+    &::before {
+      content: "";
+      background-image: url("../../assets/image/pattern2.png");
+      width: 100%;
+      position: absolute;
+      height: 113px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: -10;
+      top: 83px;
+      left: 40px;
+    }
+    .first-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 43px;
+      padding-top: 38px;
+
+      div {
+        img {
+          width: 100%;
+          filter: grayscale(100%);
+          transition: 200ms ease-in;
+          &:hover {
+            filter: grayscale(0%);
+          }
+        }
+      }
+    }
+
+    .second-row {
+      padding-top: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      div {
+        img {
+          width: 100%;
+          filter: grayscale(100%);
+          transition: 200ms ease-in;
+          &:hover {
+            filter: grayscale(0%);
+          }
+        }
+      }
+    }
+  }
+}

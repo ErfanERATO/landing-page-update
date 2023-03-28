@@ -1,0 +1,40 @@
+section {
+  .hero-text-title {
+    display: flex;
+    justify-content: center;
+    padding-top: 78px;
+    h1 {
+      background: linear-gradient(
+        270.19deg,
+        #ffffff 62.48%,
+        rgba(255, 255, 255, 0) 105.48%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+  }
+  .hero-description {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    p {
+      font-size: 1rem;
+      line-height: 32px;
+      color: rgba(255, 255, 255, 0.85);
+      margin-bottom: 0px;
+      max-width: 445px;
+      text-align: center;
+    }
+  }
+
+  .hero-image {
+    display: flex;
+    justify-content: center;
+    padding-top: 28px;
+    img{
+      // width: 100%;
+    }
+  }
+}

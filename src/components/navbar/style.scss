@@ -1,0 +1,37 @@
+.navbar.bg-dark {
+  background-color: transparent !important;
+}
+
+.navbar {
+  direction: rtl;
+  .navbar-logo {
+    display: none;
+  }
+  .navbar-collapse {
+    justify-content: center;
+    .navbar-nav {
+      --bs-nav-link-hover-color: #096cf0 !important;
+      margin-right: 0px !important;
+      .nav-link {
+        --bs-nav-link-color: #ffffff;
+        --bs-navbar-nav-link-padding-x: 1.75rem;
+      }
+    }
+  }
+  @media only screen and (max-width: 990px) and (min-width: 100px) {
+    .navbar-logo {
+      display: block;
+    }
+
+  }
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  top: 0;
+  img {
+    width: auto;
+    height: 3.75rem;
+  }
+}

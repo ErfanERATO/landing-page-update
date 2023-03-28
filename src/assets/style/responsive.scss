@@ -1,0 +1,60 @@
+.container {
+  width: 100%;
+  padding: 12px;
+}
+
+@media only screen and (min-width: 300px) {
+}
+@media (max-width: 599px) {
+  h1 {
+    font-size: 2.1rem !important;
+  }
+}
+@media (min-width: 600px) {
+  h1 {
+    font-size: 2.5rem !important;
+  }
+}
+
+@media (min-width: 990px) {
+  h1 {
+    font-size: 3rem !important;
+  }
+  .container {
+    max-width: 900px !important;
+    padding: 12px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+
+}
+
+@media (min-width: 1200px) {
+  .navbar-logo{
+    display: none!important;
+  }
+  h1 {
+    font-size: 3.5rem !important;
+  }
+  .container {
+    max-width: 1185px !important;
+  }
+
+
+}
+
+@media (min-width: 1500px) {
+  h1 {
+    font-size: 3.5rem !important;
+  }
+  .container {
+    max-width: 1400px !important;
+  }
+}
+
+@media (min-width: 2000px) {
+  .container {
+    max-width: 1800px !important;
+  }
+}
