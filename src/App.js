@@ -16,6 +16,7 @@ import ContantUs from "./components/contact-us/ContantUs";
 import CopyRights from "./components/copyRights";
 import InnerBrands from "./components/innerBrands";
 import CustomNavbar from "./components/navbar/Navbar";
+import CustomStepper from "./components/steps";
 
 function App() {
   const location = useLocation();
@@ -28,17 +29,18 @@ function App() {
       </BgImage>
 
       <main>
-        <AboutUs/>
-        <Trust/>
+        <AboutUs />
+        <Trust />
         <ForiegnBrands />
-        <InnerBrands/>
-        <Repersent/>
-        <Perssonel/>
-        <Management/>
-        <ContantUs/>
+        <InnerBrands />
+        <Repersent />
+        <CustomStepper />
+        <Management />
+        <Perssonel />
+        <ContantUs />
       </main>
       <Footer />
-      <CopyRights/>
+      <CopyRights />
     </>
   );
 }

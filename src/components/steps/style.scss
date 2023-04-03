@@ -1,0 +1,87 @@
+.stepper-section {
+  position: relative;
+  &::after {
+    content: "";
+    background-image: url("../../assets/image/dot.png");
+    width: 188px;
+    height: auto;
+    position: absolute;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: 0;
+    top: 0;
+  }
+  .stepper {
+    display: flex;
+    justify-content: center;
+    margin-top: 191px;
+    .title {
+      display: flex;
+      justify-content: center;
+      // left: 40% !important;
+      position: relative;
+      margin-bottom: -90px;
+      h2 {
+        color: #100942;
+        text-align: center;
+        line-height: 41px;
+        font-size: 1.5rem;
+      }
+    }
+
+    .stepper-holder {
+      display: flex;
+      justify-content: center;
+      padding-top: 108px;
+      .c-stepper {
+        --size: 3rem;
+        --spacing: 0.5rem;
+        .c-stepper__item {
+          position: relative;
+          display: flex;
+          gap: 1rem;
+          padding-bottom: 4rem;
+          direction: rtl;
+          &::before {  
+            --size: 3rem;
+            content: "";
+            position: relative;
+            z-index: 1;
+            flex: 0 0 var(--size);
+            height: var(--size);
+            border-radius: 12px;
+            background-color: #002234;
+          }
+          &:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            transform: translateX(-1.5rem);
+            width: 2px;
+            background: linear-gradient(
+              180deg,
+              rgba(9, 108, 240, 0.55) 2.6%,
+              #096cf0 53.61%,
+              rgba(9, 108, 240, 0.55) 100%
+            );
+          }
+          .c-stepper__content {
+            text-align: right;
+            h2 {
+              color: #100942;
+              font-size: 1.188rem;
+            }
+            p {
+              color: #616f94;
+              font-size: 0.875rem;
+              max-width: 333px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
