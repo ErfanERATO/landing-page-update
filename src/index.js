@@ -9,16 +9,17 @@ import "../src/assets/fonts/kalame/stylesheet.css";
 import "../src/assets/style/responsive.scss";
 import "bootstrap/dist/css/bootstrap.css";
 import "../src/assets/font-icon/style.css";
+import ContextProvider from "./context";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
+  <ContextProvider>
     <ConfigProvider theme={{ token: theme }}>
       <BrowserRouter>
         <App />
       </BrowserRouter>
     </ConfigProvider>
-  </React.StrictMode>
+  </ContextProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
