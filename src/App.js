@@ -16,8 +16,15 @@ import Perssonel from "./components/perssonel";
 import Repersent from "./components/repersent";
 import CustomStepper from "./components/steps";
 import Trust from "./components/trust";
+import SplashScreen from "./components/splashScreen";
+import { useGet } from "./hooks/useGet";
 
 function App() {
+  const { data, loading } = useGet({ url: "" });
+  if (loading) {
+    // return <SplashScreen />;
+  }
+
   return (
     <>
       <BgImage>
@@ -25,7 +32,6 @@ function App() {
         <CustomNavbar />
         <Hero />
       </BgImage>
-
       <main>
         <AboutUs />
         <Trust />
