@@ -1,25 +1,30 @@
+import "antd/dist/reset.css";
 import React from "react";
 import "../src/assets/style/index.scss";
-import "antd/dist/reset.css";
-import { Routes, Route, useLocation } from "react-router-dom";
-import Header from "./components/header/Header";
-import Hero from "./components/hero/Hero";
-import Footer from "./components/footer/Footer";
+import AboutUs from "./components/about";
 import BgImage from "./components/bgImage";
-import AboutUs from "./components/about/AboutUs";
-import Trust from "./components/trust/Trust";
-import ForiegnBrands from "./components/foreignBrands/Brands";
-import Repersent from "./components/repersent/Repersent";
-import Perssonel from "./components/perssonel";
-import Management from "./components/management";
-import ContantUs from "./components/contact-us/ContantUs";
+import ContantUs from "./components/contact-us";
 import CopyRights from "./components/copyRights";
+import Footer from "./components/footer";
+import ForiegnBrands from "./components/foreignBrands";
+import Header from "./components/header";
+import Hero from "./components/hero";
 import InnerBrands from "./components/innerBrands";
-import CustomNavbar from "./components/navbar/Navbar";
+import Management from "./components/management";
+import CustomNavbar from "./components/navbar";
+import Perssonel from "./components/perssonel";
+import Repersent from "./components/repersent";
 import CustomStepper from "./components/steps";
+import Trust from "./components/trust";
+import SplashScreen from "./components/splashScreen";
+import { useGet } from "./hooks/useGet";
 
 function App() {
-  const location = useLocation();
+  const { data, loading } = useGet({ url: "" });
+  if (loading) {
+    // return <SplashScreen />;
+  }
+
   return (
     <>
       <BgImage>
@@ -27,7 +32,6 @@ function App() {
         <CustomNavbar />
         <Hero />
       </BgImage>
-
       <main>
         <AboutUs />
         <Trust />

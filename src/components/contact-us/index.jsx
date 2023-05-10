@@ -88,9 +88,7 @@ const ContantUs = () => {
                   url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
                 <Marker position={[36.19712, 58.78857]}>
-                  <Popup>
-                    A pretty CSS3 popup. <br /> Easily customizable.
-                  </Popup>
+                  <Popup>خدمات فنی ناصری</Popup>
                 </Marker>
               </MapContainer>
             </div>
