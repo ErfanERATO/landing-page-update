@@ -16,7 +16,7 @@ const CustomStepper = () => {
           <div className="col-12">
             <div className="stepper-holder">
               <ol class="c-stepper">
-                <li class="c-stepper__item">
+                <li class="c-stepper__item" >
                   <div class="c-stepper__content">
                     <h2 class="c-stepper__title fw-500">تماس با پشتیبانی</h2>
                     <p className="fw-400">

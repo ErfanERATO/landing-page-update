@@ -13,7 +13,6 @@ const Header = () => {
               <div className="information">
                 <div className="phone">
                   <i className="isax isax-call" style={{ color: "#096CF0", fontSize: "1.375rem" }}></i>
-
                   <a href="tel:+989306773732">+989306773732</a>
                 </div>
                 <div className="location">
