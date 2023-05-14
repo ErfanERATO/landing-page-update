@@ -8,13 +8,13 @@ const AboutUs = () => {
       icon: (
         <img src={require("../../assets/image/icon/glass-stats.png")} alt="" />
       ),
-      sub: "قیمت مناسب",
+      sub: "کیفیت بالای کار"
     },
     {
       icon: (
         <img src={require("../../assets/image/icon/price-tag.png")} alt="" />
       ),
-      sub: "قیمت مناسب",
+      sub: "قیمت مناسب"
     },
   ];
 
@@ -23,14 +23,13 @@ const AboutUs = () => {
       icon: (
         <img src={require("../../assets/image/icon/thumb-up.png")} alt="" />
       ),
-      sub: "قیمت مناسب",
+      sub:  "نیروی کار متخصص"
     },
     {
       icon: <img src={require("../../assets/image/icon/truck.png")} alt="" />,
-      sub: "قیمت مناسب",
+      sub: "ارسال سریع"
     },
   ];
-
 
   return (
     <section className="about-us-section container" id="about-us" dir="ltr">
@@ -56,8 +55,8 @@ const AboutUs = () => {
           </div>
         </div>
 
-        <div className="col-md-11" >
-          <div className="row justify-content-center" >
+        <div className="col-md-11">
+          <div className="row justify-content-center">
             <div className="col-sm-11 col-md-4">
               <div className="about-box-title">
                 <h2 className="fw-600">
@@ -79,7 +78,7 @@ const AboutUs = () => {
             ))}
           </div>
         </div>
-        
+
         <div className="col-md-11">
           <div className="row justify-content-center">
             {data.map((element, key) => (

@@ -29,7 +29,7 @@ function App() {
   return (
     <>
       <BgImage>
-        <Header />
+        <Header data={data?.data} />
         <CustomNavbar />
         <Hero />
       </BgImage>
@@ -42,7 +42,7 @@ function App() {
         <CustomStepper />
         <Management />
         <Perssonel data={data?.data?.tec} />
-        <ContantUs />
+        <ContantUs data={data?.data} />
       </main>
       <Footer />
       <CopyRights />

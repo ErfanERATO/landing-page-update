@@ -43,15 +43,34 @@
           gap: 1rem;
           padding-bottom: 4rem;
           direction: rtl;
+
+          &:nth-child(even) div {
+            text-align: left !important;
+          }
+
           &::before {  
             --size: 3rem;
-            content: "";
+            content: "1";
             position: relative;
             z-index: 1;
             flex: 0 0 var(--size);
             height: var(--size);
             border-radius: 12px;
             background-color: #002234;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+          }
+          &:nth-child(2)::before {
+            content: "2";
+          }
+          &:nth-child(3)::before {
+            content: "3";
+          }
+          &:nth-child(4)::before {
+            content: "4";
           }
           &:not(:last-child)::after {
             content: "";

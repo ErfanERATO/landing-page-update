@@ -3,9 +3,8 @@ import "../contact-us/style.scss";
 import "../../assets/style/custom.scss";
 import "leaflet/dist/leaflet.css";
 import { MapContainer, TileLayer, useMap, Marker, Popup } from "react-leaflet";
-import { BsFillTelephoneFill } from "react-icons/bs";
 
-const ContantUs = () => {
+const ContantUs = ({data}) => {
   return (
     <section className="contact-us-section container" id="contact-us" dir="ltr">
       <div className="row justify-content-center">
@@ -104,8 +103,8 @@ const ContantUs = () => {
                   ایمیل رسمی فروشگاه به نشانی زیر در ارتباط باشید
                 </p>
                 <button className="vs-button vs-button--null vs-button--size-null vs-button--primary vs-button--default">
-                  <div className="vs-button__content">
-                    info@naseriservice.ir
+                  <div className="vs-button__content" style={{paddingBottom : '1px'}}>
+                   {data?.landing?.email}
                   </div>
                 </button>
               </div>

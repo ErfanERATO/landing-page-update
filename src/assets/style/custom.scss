@@ -40,3 +40,10 @@ html {
 .fw-800 {
   font-weight: 800;
 }
+
+.break-line-120 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 120px;
+}
