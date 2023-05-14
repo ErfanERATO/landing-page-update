@@ -21,8 +21,9 @@ import { useGet } from "./hooks/useGet";
 
 function App() {
   const { data, loading } = useGet({ url: "web/data" });
+  console.log(data)
   if (loading) {
-    // return <SplashScreen />;
+    return <SplashScreen />;
   }
 
   return (
@@ -40,7 +41,7 @@ function App() {
         <Repersent />
         <CustomStepper />
         <Management />
-        <Perssonel />
+        <Perssonel data={data?.data?.tec} />
         <ContantUs />
       </main>
       <Footer />

@@ -19,7 +19,7 @@ const Hero = () => {
         </div>
 
         <div className="col-12 hero-image">
-          <img  src={require("../../assets/image/top-image.png")} alt="" />
+          <img  src={require("../../assets/image/top-image.svg").default} alt="" />
         </div>
       </div>
     </section>
