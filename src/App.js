@@ -20,7 +20,7 @@ import SplashScreen from "./components/splashScreen";
 import { useGet } from "./hooks/useGet";
 
 function App() {
-  const { data, loading } = useGet({ url: "" });
+  const { data, loading } = useGet({ url: "web/data" });
   if (loading) {
     // return <SplashScreen />;
   }

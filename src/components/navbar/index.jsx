@@ -17,7 +17,7 @@ const CustomNavbar = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav
-            className="me-auto"
+            className="ms-auto"
             onClick={(e) => {
               const element = document.getElementById(e.key);
               if (element) {
@@ -25,7 +25,7 @@ const CustomNavbar = () => {
               }
             }}
           >
-            <Nav.Link href="#about-us">درباره‌ی ما</Nav.Link>
+            <Nav.Link className="ms-0 pe-0" href="#about-us">درباره‌ی ما</Nav.Link>
             <Nav.Link href="#brands">برند‌های تحت پوشش</Nav.Link>
             <Nav.Link href="#represents">نمایندگی‌های فعال</Nav.Link>
             <Nav.Link href="#techneation">پرسنل و تکنسین</Nav.Link>
