@@ -1,6 +1,7 @@
 import React from "react";
 import "../contact-us/style.scss";
 import "../../assets/style/custom.scss";
+import "leaflet/dist/leaflet.css";
 import { MapContainer, TileLayer, useMap, Marker, Popup } from "react-leaflet";
 import { BsFillTelephoneFill } from "react-icons/bs";
 
