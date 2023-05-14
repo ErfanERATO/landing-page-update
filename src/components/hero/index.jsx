@@ -2,7 +2,7 @@ import React from "react";
 import "../hero/style.scss";
 import "../../assets/style/custom.scss";
 
-const Hero = () => {
+const Hero = ({data}) => {
   return (
     <section>
       <div className="row">
@@ -12,8 +12,7 @@ const Hero = () => {
           </div>
           <div className="hero-description">
             <p className="fw-300">
-              نمایندگی تعمیرات لوازم خانگی :لباسشویی اتوماتیک ماشین ظرفشویی
-              یخچال فریزر کولر گازی اسپیلت
+              {data?.landing?.about_us_short}
             </p>
           </div>
         </div>

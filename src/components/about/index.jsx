@@ -2,19 +2,20 @@ import React from "react";
 import "../about/style.scss";
 import "../../assets/style/custom.scss";
 
-const AboutUs = () => {
+const AboutUs = ({ info }) => {
+  console.log("INfo" , info)
   let elements = [
     {
       icon: (
         <img src={require("../../assets/image/icon/glass-stats.png")} alt="" />
       ),
-      sub: "کیفیت بالای کار"
+      sub: "کیفیت بالای کار",
     },
     {
       icon: (
         <img src={require("../../assets/image/icon/price-tag.png")} alt="" />
       ),
-      sub: "قیمت مناسب"
+      sub: "قیمت مناسب",
     },
   ];
 
@@ -23,11 +24,11 @@ const AboutUs = () => {
       icon: (
         <img src={require("../../assets/image/icon/thumb-up.png")} alt="" />
       ),
-      sub:  "نیروی کار متخصص"
+      sub: "نیروی کار متخصص",
     },
     {
       icon: <img src={require("../../assets/image/icon/truck.png")} alt="" />,
-      sub: "ارسال سریع"
+      sub: "ارسال سریع",
     },
   ];
 
@@ -41,17 +42,7 @@ const AboutUs = () => {
         </div>
         <div className="col-12">
           <div className="about-us-description">
-            <p className="fw-300">
-              خدمات فنی ناصری مرکز تخصصی نصب، اموزش و تعمیرات لوازم خانگی در
-              نیشابور بوده و مجری تخصصی خدمات پس از فروش برند های مطرح ایرانی و
-              خارجی درکنار شماست تا دسترسی به متخصصان و تکنیسین های مجرب را برای
-              شما آسان کند .علاوه بر گرد آوری تیم تخصصی تعمیرات ، استفاده از
-              قطعات اصلی ارئه فاکتور انلاین و گارانتی رسمی کرده است.
-              <br />
-              مجموعه ما با داشتن بیشترین متقاضی‌ در نیشابور برای خرید قطعات
-              دستگاه ، شوینده مناسب ،کیسه جاروبرقی و انواع لوازم جانبی ،درخدمت
-              شما مشتریان گرامی میباشد.
-            </p>
+            <p className="fw-300">{info?.landing?.about_us}</p>
           </div>
         </div>
 

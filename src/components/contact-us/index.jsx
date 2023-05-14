@@ -20,8 +20,7 @@ const ContantUs = ({data}) => {
             <div className="address">
               <h3 className="fw-600">آدرس :</h3>
               <p className="fw-400">
-                نیشابور، خیابانطالقانی بعد از طالقانی ۱، خدمات فنی ناصری ساعات
-                کاری 8 تا 17
+               {data?.landing?.city}  {data?.landing?.address} 
               </p>
             </div>
 
@@ -41,7 +40,7 @@ const ContantUs = ({data}) => {
                       fontSize: "0.75rem",
                     }}
                   >
-                    +989306773732
+                   {data?.landing?.tell}
                   </a>
                   <svg
                     width="20"
@@ -74,7 +73,7 @@ const ContantUs = ({data}) => {
                       fontSize: "0.75rem",
                     }}
                   >
-                    +989306773732
+                     {data?.landing?.tell2}
                   </a>
                   <svg
                     width="20"

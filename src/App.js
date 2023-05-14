@@ -21,7 +21,7 @@ import { useGet } from "./hooks/useGet";
 
 function App() {
   const { data, loading } = useGet({ url: "web/data" });
-  console.log(data)
+  console.log(data);
   if (loading) {
     return <SplashScreen />;
   }
@@ -31,16 +31,16 @@ function App() {
       <BgImage>
         <Header data={data?.data} />
         <CustomNavbar />
-        <Hero />
+        <Hero data={data?.data} />
       </BgImage>
       <main>
-        <AboutUs />
+        <AboutUs info={data?.data} />
         <Trust />
         <ForiegnBrands />
         <InnerBrands />
         <Repersent />
         <CustomStepper />
-        <Management />
+        <Management data={data?.data?.management} />
         <Perssonel data={data?.data?.tec} />
         <ContantUs data={data?.data} />
       </main>
