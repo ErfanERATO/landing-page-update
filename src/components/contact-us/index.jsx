@@ -7,7 +7,7 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 
 const ContantUs = () => {
   return (
-    <section className="contact-us-section container" id="contact-us">
+    <section className="contact-us-section container" id="contact-us" dir="ltr">
       <div className="row justify-content-center">
         <div className="col-md-4">
           <div className="contact-way">

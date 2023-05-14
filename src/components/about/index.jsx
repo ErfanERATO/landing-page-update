@@ -33,7 +33,7 @@ const AboutUs = () => {
 
 
   return (
-    <section className="about-us-section container" id="about-us">
+    <section className="about-us-section container" id="about-us" dir="ltr">
       <div className="row">
         <div className="col-12">
           <div className="abot-us-title">
@@ -56,8 +56,8 @@ const AboutUs = () => {
           </div>
         </div>
 
-        <div className="col-md-11">
-          <div className="row justify-content-center">
+        <div className="col-md-11" >
+          <div className="row justify-content-center" >
             <div className="col-sm-11 col-md-4">
               <div className="about-box-title">
                 <h2 className="fw-600">
