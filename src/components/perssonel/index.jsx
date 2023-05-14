@@ -3,6 +3,7 @@ import "../perssonel/style.scss";
 import "../../assets/style/custom.scss";
 import { FaUser } from "react-icons/fa";
 import { useState } from "react";
+import { AiOutlineSearch } from "react-icons/ai";
 
 const Perssonel = ({ data = [] }) => {
   const [showMore, setShowMore] = useState(true);
@@ -23,10 +24,31 @@ const Perssonel = ({ data = [] }) => {
             <div className="title">
               <h2 className="fw-600">پرسنل و تکنسین</h2>
             </div>
-            <div className="d-flex align-items-center justify-content-center mt-2">
+            <div
+              className="d-flex align-items-center justify-content-center mt-2"
+              style={{ marginRight: "40px" }}
+            >
               <input
                 onChange={(e) => changeFilter(e.target.value)}
+                placeholder="جست‌و‌جوی تکنسین"
+                style={{ border: "none", outline: "none" }}
               />
+              <div
+                style={{
+                  backgroundColor: "#1152a8",
+                  borderRadius: "50px",
+                  padding: "5px",
+                  marginLeft: "5px",
+                }}
+                className="align-items-center"
+              >
+                <AiOutlineSearch
+                  style={{
+                    fontSize: "1.5rem",
+                    color: "#ffffff",
+                  }}
+                />
+              </div>
             </div>
           </div>
 
