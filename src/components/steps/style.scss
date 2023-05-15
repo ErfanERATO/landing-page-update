@@ -44,9 +44,9 @@
           padding-bottom: 4rem;
           direction: rtl;
 
-          &:nth-child(even) div {
-            text-align: left !important;
-          }
+          // &:nth-child(even) div {
+          //   text-align: left;
+          // }
 
           &::before {  
             --size: 3rem;

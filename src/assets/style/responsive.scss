@@ -47,6 +47,7 @@
     }
     &:nth-child(even) > div {
       transform: translateX(calc(50% + 60px));
+      text-align: left !important;
     }
     &::before,
     &::after {

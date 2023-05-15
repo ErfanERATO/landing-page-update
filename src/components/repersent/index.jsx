@@ -30,7 +30,7 @@ const Repersent = ({ data = [] }) => {
 
             <div className="col-12">
               <div className="second-row">
-                {data.slice(0, 4).map((el, key) => {
+                {data.slice(5, 9).map((el, key) => {
                   return (
                     <div className="" key={key}>
                       <img src={el.photo[0]?.url} alt="" />

@@ -26,19 +26,29 @@ const Perssonel = ({ data = [] }) => {
             </div>
             <div
               className="d-flex align-items-center justify-content-center mt-2"
-              style={{ marginRight: "40px" }}
+              style={{
+                marginRight: "10px",
+                backgroundColor: "red",
+                padding: "4px 10px",
+                borderRadius: "50px",
+                backgroundColor: "#f5f7fe",
+              }}
             >
               <input
                 onChange={(e) => changeFilter(e.target.value)}
                 placeholder="جست‌و‌جوی تکنسین"
-                style={{ border: "none", outline: "none" }}
+                style={{
+                  border: "none",
+                  outline: "none",
+                  backgroundColor: "#f5f7fe",
+                }}
               />
               <div
                 style={{
                   backgroundColor: "#1152a8",
                   borderRadius: "50px",
                   padding: "5px",
-                  marginLeft: "5px",
+                  marginLeft: "-5px",
                 }}
                 className="align-items-center"
               >
