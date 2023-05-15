@@ -20,7 +20,7 @@ const ContantUs = ({data}) => {
   return (
     <section className="contact-us-section container" id="contact-us" dir="ltr">
       <div className="row justify-content-center">
-        <div className="col-md-4">
+        <div className="col-md-6 col-xl-5">
           <div className="contact-way">
             <div className="logo">
               <img src={require("../../assets/image/with_text 2.png")} alt="" />
@@ -122,7 +122,7 @@ const ContantUs = ({data}) => {
             </div>
           </div>
         </div>
-        <div className="col-md-4">
+        <div className="col-md-6 col-xl-4">
           <div className="map">
             <div className="location">
               <MapContainer

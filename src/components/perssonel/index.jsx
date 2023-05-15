@@ -25,22 +25,23 @@ const Perssonel = ({ data = [] }) => {
               <h2 className="fw-600">پرسنل و تکنسین</h2>
             </div>
             <div
-              className="d-flex align-items-center justify-content-center mt-2"
+              className="d-flex align-items-center justify-content-center mt-2 search-bar"
               style={{
                 marginRight: "10px",
                 backgroundColor: "red",
                 padding: "4px 10px",
                 borderRadius: "50px",
-                backgroundColor: "#f5f7fe",
+                backgroundColor: "#ffffff",
               }}
             >
               <input
+                className="search-input"
                 onChange={(e) => changeFilter(e.target.value)}
                 placeholder="جست‌و‌جوی تکنسین"
                 style={{
                   border: "none",
                   outline: "none",
-                  backgroundColor: "#f5f7fe",
+                  backgroundColor: "#ffffff",
                 }}
               />
               <div
