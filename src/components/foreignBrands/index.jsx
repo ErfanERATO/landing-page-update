@@ -3,9 +3,7 @@ import "../foreignBrands/style.scss";
 import "../../assets/style/custom.scss";
 import CustomSwiper from "../swiper";
 
-
-const ForiegnBrands = () => {
-
+const ForiegnBrands = ({ data }) => {
   return (
     <div className="whole-foriegn-brands container" id="brands">
       <div className="row">
@@ -16,9 +14,9 @@ const ForiegnBrands = () => {
         </div>
         <div className="col-12">
           <div className="swiper-title">
-           <h3 className="fw-500">برند‌های خارجی</h3>
+            <h3 className="fw-500">برند‌های خارجی</h3>
           </div>
-          <CustomSwiper/>
+          <CustomSwiper data={data?.foreign_brands} />
         </div>
       </div>
     </div>
@@ -26,4 +24,3 @@ const ForiegnBrands = () => {
 };
 
 export default ForiegnBrands;
-

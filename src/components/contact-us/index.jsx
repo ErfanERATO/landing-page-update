@@ -3,8 +3,20 @@ import "../contact-us/style.scss";
 import "../../assets/style/custom.scss";
 import "leaflet/dist/leaflet.css";
 import { MapContainer, TileLayer, useMap, Marker, Popup } from "react-leaflet";
+import L from 'leaflet';
+
+import icon from 'leaflet/dist/images/marker-icon.png';
+import iconShadow from 'leaflet/dist/images/marker-shadow.png';
+
+let DefaultIcon = L.icon({
+  iconUrl: icon,
+  shadowUrl: iconShadow
+});
+
+L.Marker.prototype.options.icon = DefaultIcon;
 
 const ContantUs = ({data}) => {
+  console.log("first" , data?.landing?.location.split(","))
   return (
     <section className="contact-us-section container" id="contact-us" dir="ltr">
       <div className="row justify-content-center">
@@ -114,7 +126,7 @@ const ContantUs = ({data}) => {
           <div className="map">
             <div className="location">
               <MapContainer
-                center={[36.19712, 58.78857]}
+                center={data?.landing?.location?.split(",") || [] }
                 zoom={15}
                 scrollWheelZoom={false}
                 attributionControl={false}
@@ -123,7 +135,7 @@ const ContantUs = ({data}) => {
                   attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                   url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
-                <Marker position={[36.19712, 58.78857]}>
+                <Marker position={ data?.landing?.location?.split(",") || [] }>
                   <Popup>خدمات فنی ناصری</Popup>
                 </Marker>
               </MapContainer>

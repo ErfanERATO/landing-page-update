@@ -7,36 +7,7 @@ import "swiper/css/pagination";
 
 import { Autoplay, Pagination, Navigation } from "swiper";
 
-const CustomSwiper = () => {
-  let elements = [
-    {
-      image: require("../../assets/image/brands/brand1.png"),
-    },
-    {
-      image: require("../../assets/image/brands/brand2.png"),
-    },
-    {
-      image: require("../../assets/image/brands/brand3.png"),
-    },
-    {
-      image: require("../../assets/image/brands/brand4.png"),
-    },
-    {
-      image: require("../../assets/image/brands/brand5.png"),
-    },
-    {
-      image: require("../../assets/image/brands/brand1.png"),
-    },
-    {
-      image: require("../../assets/image/brands/brand2.png"),
-    },
-    {
-      image: require("../../assets/image/brands/brand3.png"),
-    },
-    {
-      image: require("../../assets/image/brands/brand4.png"),
-    },
-  ];
+const CustomSwiper = ({ data = [] }) => {
   return (
     <Swiper
       spaceBetween={20}
@@ -44,10 +15,15 @@ const CustomSwiper = () => {
       className="mySwiper"
       slidesPerView={"auto"}
     >
-      {elements.map((element, key) => (
+      {data.map((element, key) => (
         <SwiperSlide key={key} clickable={true}>
-          <div className="card-brand">
-            <img src={element.image} alt="" style={{ width: "100%" }} />
+          <div className="card-brand flex-column position-relative">
+            <img
+              src={element?.photo[0]?.url}
+              alt=""
+              style={{ width: "100%" }}
+            />
+            <h4 className="brand-name">{element?.title}</h4>
           </div>
         </SwiperSlide>
       ))}

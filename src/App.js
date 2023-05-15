@@ -36,9 +36,9 @@ function App() {
       <main>
         <AboutUs info={data?.data} />
         <Trust />
-        <ForiegnBrands />
-        <InnerBrands />
-        <Repersent />
+        <ForiegnBrands data={data?.data} />
+        <InnerBrands data={data?.data} />
+        <Repersent data={data?.data?.active_brands} />
         <CustomStepper />
         <Management data={data?.data?.management} />
         <Perssonel data={data?.data?.tec} />

@@ -14,27 +14,32 @@
     }
   }
 
-  .all-represents {
+  .all-represents .row {
+    > * {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
     position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
     &::before {
       content: "";
       background-image: url("../../assets/image/pattern2.png");
       width: 100%;
       position: absolute;
-      height: 113px;
+      height: 112px;
       background-repeat: no-repeat;
       background-size: contain;
       z-index: -10;
-      top: 83px;
-      left: 40px;
+      top: 50%;
+      transform: translateY(-50%);
     }
     .first-row {
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 43px;
-      padding-top: 38px;
-
+      transform: translateY(20px);
       div {
         img {
           width: 100%;
@@ -53,6 +58,7 @@
       justify-content: center;
       align-items: center;
       gap: 50px;
+      transform: translateY(-20px);
       div {
         img {
           width: 100%;
@@ -61,6 +67,19 @@
           &:hover {
             filter: grayscale(0%);
           }
+        }
+      }
+    }
+
+    .first-row,
+    .second-row {
+      div {
+        width: 18%;
+        max-width: 190px;
+        img {
+          mix-blend-mode: difference;
+          max-width: 100%;
+          height: auto;
         }
       }
     }

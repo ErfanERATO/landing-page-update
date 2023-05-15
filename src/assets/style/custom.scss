@@ -47,3 +47,11 @@ html {
   text-overflow: ellipsis;
   max-width: 120px;
 }
+
+.brand-name {
+  font-size: 0.8rem !important;
+  font-weight: 500 !important;
+  position: absolute;
+  bottom: 7px;
+  color: #616f94;
+}
