@@ -17,5 +17,5 @@ export const useGet = ({ url = "" }) => {
     getData();
   }, []);
 
-  return { data, loading };
+  return { loading };
 };

@@ -113,11 +113,11 @@ const ContantUs = ({data}) => {
                   برای ارتباط با واحد روابط عمومی و یا امور همکاری سازمانی،با
                   ایمیل رسمی فروشگاه به نشانی زیر در ارتباط باشید
                 </p>
-                <button className="vs-button vs-button--null vs-button--size-null vs-button--primary vs-button--default">
+                <a className="vs-button vs-button--null vs-button--size-null vs-button--primary vs-button--default" href="mailto:erfan.erato.79@gmail.com" style={{textDecoration: "none"}}>
                   <div className="vs-button__content" style={{paddingBottom : '1px'}}>
                    {data?.landing?.email}
                   </div>
-                </button>
+                </a>
               </div>
             </div>
           </div>
