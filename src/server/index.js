@@ -1,6 +1,6 @@
 import axios from "axios";
-export const API_SERVER = "http://192.168.1.106:8001/api";
-// export const API_SERVER = "https://api.farazsmspanel.com/api";
+export const API_SERVER = "https://api.naseriservice.ir/api";
+
 
 axios.defaults.headers.post["Accept"] = "application/json";
 axios.defaults.headers.post["Content-Type"] = "multipart/form-data";
